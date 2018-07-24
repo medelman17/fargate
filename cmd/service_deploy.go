@@ -1,11 +1,11 @@
 package cmd
 
 import (
-	"github.com/jpignata/fargate/console"
-	"github.com/jpignata/fargate/docker"
-	ECR "github.com/jpignata/fargate/ecr"
-	ECS "github.com/jpignata/fargate/ecs"
-	"github.com/jpignata/fargate/git"
+	"github.com/medelman17/fargate/console"
+	"github.com/medelman17/fargate/docker"
+	ECR "github.com/medelman17/fargate/ecr"
+	ECS "github.com/medelman17/fargate/ecs"
+	"github.com/medelman17/fargate/git"
 	"github.com/spf13/cobra"
 )
 
