@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"github.com/jpignata/fargate/console"
-	ECS "github.com/jpignata/fargate/ecs"
+	"github.com/medelman17/fargate/console"
+	ECS "github.com/medelman17/fargate/ecs"
 	"github.com/spf13/cobra"
 )
 
