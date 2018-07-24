@@ -105,13 +105,13 @@ CloudWatch Logs, and Amazon Route 53 into an easy-to-use CLI.`,
 			}
 		}
 
-		for _, validRegion := range validRegions {
-			if region == validRegion {
-				break
-			}
+		// for _, validRegion := range validRegions {
+		// 	if region == validRegion {
+		// 		break
+		// 	}
 
-			console.IssueExit("Invalid region: %s [valid regions: %s]", region, strings.Join(validRegions, ", "))
-		}
+		// 	console.IssueExit("Invalid region: %s [valid regions: %s]", region, strings.Join(validRegions, ", "))
+		// }
 
 		config := &aws.Config{
 			Region: aws.String(region),
