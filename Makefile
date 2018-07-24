@@ -10,7 +10,7 @@ test:
 	go test -race -cover $(PACKAGES)
 
 build:
-	go build -o ./node_modules/.bin/fargate main.go
+	go build -o bin/fargate main.go
 
 dist:
 	GOOS=darwin GOARCH=amd64 go build -o dist/build/fargate-darwin-amd64/fargate main.go
