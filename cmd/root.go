@@ -10,8 +10,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/jpignata/fargate/console"
-	ECS "github.com/jpignata/fargate/ecs"
+	"github.com/medelman17/fargate/console"
+	ECS "github.com/medelman17/fargate/ecs"
 	"github.com/spf13/cobra"
 	"golang.org/x/crypto/ssh/terminal"
 )
@@ -20,7 +20,7 @@ const (
 	version = "0.2.3"
 
 	defaultClusterName = "fargate"
-	defaultRegion      = "us-east-1"
+	defaultRegion      = "us-west-2"
 
 	mebibytesInGibibyte   = 1024
 	protocolHttp          = "HTTP"
@@ -45,7 +45,7 @@ CPU (CPU Units)    Memory (MiB)
 4096               8192 through 30720 in 1GiB increments
 `)
 
-var validRegions = []string{"us-east-1", "us-east-2","us-west-2","eu-west-1"}
+var validRegions = []string{"us-east-1", "us-east-2", "us-west-2", "eu-west-1"}
 
 var (
 	clusterName string
